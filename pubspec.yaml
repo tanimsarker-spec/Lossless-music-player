@@ -1,0 +1,32 @@
+name: lossless
+description: LOSSLESS - a premium audiophile music player by TanimSarker.
+publish_to: none
+version: 0.2.0+2
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.40            # ExoPlayer (Android), AVPlayer (iOS)
+  just_audio_media_kit: ^2.0.5   # libmpv backend (Windows/Linux)
+  media_kit_libs_windows_audio: ^1.0.9
+  media_kit_libs_linux: ^1.1.3
+  audio_service: ^0.18.15        # background, lock screen, notification (Android/iOS)
+  audio_session: ^0.1.21         # focus, interruptions, route list
+  audio_metadata_reader: ^1.4.0  # tags for MP3/M4A/OGG/Opus (FLAC/WAV parsed in-house)
+  file_picker: ^8.1.2
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
